@@ -8,6 +8,7 @@
     "email": "emil.bjorklund@inuse.se",
     "url": "http://thatemil.com"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/emilbjorklund/grunt-django-wp-convert.git"
