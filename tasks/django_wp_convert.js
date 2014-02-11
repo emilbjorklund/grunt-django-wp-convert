@@ -15,7 +15,7 @@ module.exports = function(grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
-  grunt.registerMultiTask('django_wp_convert',
+  grunt.registerTask('django_wp_convert',
     'A simple tool to convert JSON output from PHPMyAdmin/Wordpress to a format suitable for loading into a Django installation.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
@@ -64,6 +64,10 @@ module.exports = function(grunt) {
     });
 
     var resultJSONString = JSON.stringify(resultJSON);
+    // Regex for getting captions and the actual figure.
+    var captionRegex = /\[caption[^\]]* caption=\\\"([^\]]*)\\\"[^\]]*\]([^\[]*)\[\/caption\]/gi;
+
+    resultJSONString = resultJSONString.replace(captionRegex, '<figure class=\"fig-migrated\">$2 <figcaption>$1</figcaption>');
 
     var output_file = path.join(options.output_dir + '/migrated_' + options.model_string + '.json');
 
