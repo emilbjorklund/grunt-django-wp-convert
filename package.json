@@ -1,0 +1,42 @@
+{
+  "name": "grunt-django-wp-convert",
+  "description": "A simple tool to convert JSON output from PHPMyAdmin/Wordpress to a format suitable for loading into a Django installation.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/emilbjorklund/grunt-django-wp-convert",
+  "author": {
+    "name": "Emil Björklund",
+    "email": "emil.bjorklund@inuse.se",
+    "url": "http://thatemil.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/emilbjorklund/grunt-django-wp-convert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emilbjorklund/grunt-django-wp-convert/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/emilbjorklund/grunt-django-wp-convert/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}

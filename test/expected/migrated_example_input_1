@@ -1,0 +1,1 @@
+[{"pk":"74","model":"foo.Bar","fields":{"title":"Foo bar baz","pubdate":"2011-03-02 07:24:33","slug":"foo-bar-baz","is_public":"1","content_body":"<p>Foo bar baz</p>"}}]
