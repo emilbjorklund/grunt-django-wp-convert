@@ -1,6 +1,6 @@
 # grunt-django-wp-convert
 
-> A simple and very very untested and basic tool to convert JSON output from PHPMyAdmin/Wordpress to a format suitable for loading into a Django installation. Highly project-specific, you probably shouldn't use it for anything at all.
+> A simple and very very untested and basic tool to convert JSON output from PHPMyAdmin/Wordpress to a format suitable for loading into a Django installation. Highly project-specific, **you probably shouldn't use it for anything at all**.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.2`
